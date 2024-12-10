@@ -482,7 +482,7 @@ class _TestMenusState extends State<_TestMenus> {
         false => true,
         true  => null,
         null  => false,
-      };
+      }
     });
   }
 

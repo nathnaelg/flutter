@@ -104,13 +104,13 @@ class _RenderBoxSubclassVisitor extends RecursiveAstVisitor<void> {
       PropertyAccess(target: SuperExpression())  ||
       MethodInvocation(target: SuperExpression()) => true,
       _ => false,
-    };
+    }
     if (isCallingSuperImplementation) {
       return;
     }
     final Element? declaredInClassElement = node.staticElement?.declaration?.enclosingElement;
     if (declaredInClassElement is InterfaceElement && _implementsRenderBox(declaredInClassElement)) {
-      violationNodes.add((node, correctMethodName));
+      violationNodes.add(node, correctMethodName);
     }
   }
 }

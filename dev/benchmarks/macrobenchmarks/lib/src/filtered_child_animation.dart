@@ -65,7 +65,7 @@ class _FilteredChildAnimationPageState extends State<FilteredChildAnimationPage>
       FilterType.rotateTransform => 'Transformed Child Animation',
       FilterType.rotateFilter => 'Matrix Filtered Child Animation',
       null => 'Static Child',
-    };
+    }
   }
 
   static Widget _makeChild(int rows, int cols, double fontSize, bool complex) {

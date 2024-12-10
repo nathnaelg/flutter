@@ -45,7 +45,7 @@ class _OverlayExampleState extends State<OverlayExample> {
         1 => ('Commute page', Colors.green),
         2 => ('Saved page', Colors.orange),
         _ => ('No page selected.', null),
-      };
+      }
       if (color == null) {
         return Text(label);
       }

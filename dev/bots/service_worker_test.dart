@@ -119,7 +119,7 @@ String _testTypeToIndexFile(ServiceWorkerTestType type) {
     ServiceWorkerTestType.withFlutterJsNonceOn                    => 'index_with_flutterjs_el_nonce.html',
     ServiceWorkerTestType.withFlutterJsCustomServiceWorkerVersion => 'index_with_flutterjs_custom_sw_version.html',
     ServiceWorkerTestType.generatedEntrypoint                     => 'generated_entrypoint.html',
-  };
+  }
 }
 
 Future<void> _rebuildApp({ required int version, required ServiceWorkerTestType testType, required String target }) async {

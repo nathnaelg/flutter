@@ -21,9 +21,9 @@ class PopupMenuApp extends StatelessWidget {
 
 enum AnimationStyles { defaultStyle, custom, none }
 const List<(AnimationStyles, String)> animationStyleSegments = <(AnimationStyles, String)>[
-  (AnimationStyles.defaultStyle, 'Default'),
-  (AnimationStyles.custom, 'Custom'),
-  (AnimationStyles.none, 'None'),
+  AnimationStyles.defaultStyle, 'Default',
+  AnimationStyles.custom, 'Custom',
+  AnimationStyles.none, 'None',
 ];
 
 enum Menu { preview, share, getLink, remove, download }

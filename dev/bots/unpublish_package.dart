@@ -53,7 +53,7 @@ String getChannelName(Channel channel) {
     Channel.beta   => 'beta',
     Channel.dev    => 'dev',
     Channel.stable => 'stable',
-  };
+  }
 }
 
 Channel fromChannelName(String? name) {
@@ -62,7 +62,7 @@ Channel fromChannelName(String? name) {
     'dev'    => Channel.dev,
     'stable' => Channel.stable,
     _ => throw ArgumentError('Invalid channel name.'),
-  };
+  }
 }
 
 enum PublishedPlatform { linux, macos, windows }
@@ -72,7 +72,7 @@ String getPublishedPlatform(PublishedPlatform platform) {
     PublishedPlatform.linux   => 'linux',
     PublishedPlatform.macos   => 'macos',
     PublishedPlatform.windows => 'windows',
-  };
+  }
 }
 
 PublishedPlatform fromPublishedPlatform(String name) {
@@ -81,7 +81,7 @@ PublishedPlatform fromPublishedPlatform(String name) {
     'macos'   => PublishedPlatform.macos,
     'windows' => PublishedPlatform.windows,
     _ => throw ArgumentError('Invalid published platform name.'),
-  };
+  }
 }
 
 /// A helper class for classes that want to run a process, optionally have the

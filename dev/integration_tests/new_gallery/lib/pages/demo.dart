@@ -426,7 +426,7 @@ class _GalleryDemoPageState extends State<GalleryDemoPage>
               ThemeMode.system => MediaQuery.of(context).platformBrightness,
               ThemeMode.light => Brightness.light,
               ThemeMode.dark => Brightness.dark,
-            };
+            }
 
             Widget contents = Container(
               padding: EdgeInsets.symmetric(horizontal: horizontalPadding),

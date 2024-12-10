@@ -99,7 +99,7 @@ class _TextButtonExampleState extends State<TextButtonExample> {
     final (Color color1, Color color2, Color color3) = switch (colorScheme.brightness) {
       Brightness.light => (Colors.blue.withOpacity(1.0),  Colors.orange.withOpacity(1.0), Colors.yellow.withOpacity(1.0)),
       Brightness.dark  => (Colors.purple.withOpacity(1.0), Colors.cyan.withOpacity(1.0),  Colors.yellow.withOpacity(1.0)),
-    };
+    }
 
     // This gradient's appearance reflects the button's state.
     // Always return a gradient decoration so that AnimatedContainer

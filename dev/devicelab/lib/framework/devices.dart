@@ -256,7 +256,7 @@ class AndroidDeviceDiscovery implements DeviceDiscovery {
       null => Future<bool>.value(true),
       AndroidCPU.arm64 => device.isArm64(),
       AndroidCPU.arm   => device.isArm(),
-    };
+    }
   }
 
   /// Picks a random Android device out of connected devices and sets it as

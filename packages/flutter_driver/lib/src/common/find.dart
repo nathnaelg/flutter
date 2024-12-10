@@ -235,7 +235,7 @@ class ByValueKey extends SerializableFinder {
       'int'    => ByValueKey(int.parse(keyValueString)),
       'String' => ByValueKey(keyValueString),
       final String keyValueType => throw _createInvalidKeyValueTypeError(keyValueType),
-    };
+    }
   }
 }
 

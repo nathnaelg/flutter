@@ -11,7 +11,6 @@ import 'package:provider/provider.dart';
 import '../../data/gallery_options.dart';
 import '../../gallery_localizations.dart';
 import '../../layout/letter_spacing.dart';
-import 'adaptive_nav.dart';
 import 'colors.dart';
 import 'compose_page.dart';
 import 'model/email_model.dart';

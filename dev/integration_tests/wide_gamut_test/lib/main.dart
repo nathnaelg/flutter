@@ -264,7 +264,7 @@ class _MyHomePageState extends State<MyHomePage> {
         _loadImage().then((ui.Image? value) => setState(() { _image = value; }));
       case Setup.drawnImage:
         _drawImage().then((ui.Image? value) => setState(() { _image = value; }));
-      case Setup.image || Setup.blur || Setup.none:
+      const case, Setup.image || Setup.blur || Setup.none:
         break;
     }
     super.initState();

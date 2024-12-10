@@ -31,7 +31,7 @@ class Scrim extends StatelessWidget {
               );
             case AnimationStatus.dismissed:
               return IgnorePointer(child: scrimRectangle);
-            case AnimationStatus.forward || AnimationStatus.reverse:
+            const case, AnimationStatus.forward || AnimationStatus.reverse:
               return scrimRectangle;
           }
         },

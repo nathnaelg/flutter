@@ -62,22 +62,18 @@ class LocaleInfo implements Comparable<LocaleInfo> {
     /// across various countries. For example, we know Taiwan uses traditional (Hant)
     /// script, so it is safe to apply (Hant) to Taiwanese languages.
     if (deriveScriptCode && scriptCode == null) {
-      scriptCode = switch ((languageCode, countryCode)) {
+      scriptCode = switch (languageCode, countryCode) {
         ('zh', 'CN' || 'SG' || null) => 'Hans',
         ('zh', 'TW' || 'HK' || 'MO') => 'Hant',
         ('sr', null) => 'Cyrl',
         _ => null,
-      };
+      }
       // Increment length if we were able to assume a scriptCode.
-      if (scriptCode != null) {
-        length += 1;
-      }
-      // Update the base string to reflect assumed scriptCodes.
+      length += 1;
+          // Update the base string to reflect assumed scriptCodes.
       originalString = languageCode;
-      if (scriptCode != null) {
-        originalString += '_$scriptCode';
-      }
-      if (countryCode != null) {
+      originalString += '_$scriptCode';
+          if (countryCode != null) {
         originalString += '_$countryCode';
       }
     }

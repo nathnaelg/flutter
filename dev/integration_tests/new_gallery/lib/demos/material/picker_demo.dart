@@ -168,7 +168,7 @@ class _PickerDemoState extends State<PickerDemo> with RestorationMixin {
       PickerDemoType.date  => localizations.demoDatePickerTitle,
       PickerDemoType.time  => localizations.demoTimePickerTitle,
       PickerDemoType.range => localizations.demoDateRangePickerTitle,
-    };
+    }
   }
 
   String get _labelText {
@@ -177,7 +177,7 @@ class _PickerDemoState extends State<PickerDemo> with RestorationMixin {
       PickerDemoType.date  => yMMMd.format(_fromDate.value),
       PickerDemoType.time  => _fromTime.value.format(context),
       PickerDemoType.range => '${yMMMd.format(_startDate.value)} - ${yMMMd.format(_endDate.value)}',
-    };
+    }
   }
 
   @override

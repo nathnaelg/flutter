@@ -80,7 +80,7 @@ class OperationToken extends ExpressionToken {
       Operation.Subtraction    => ' - ',
       Operation.Multiplication => '  \u00D7  ',
       Operation.Division       => '  \u00F7  ',
-    };
+    }
   }
 }
 

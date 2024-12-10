@@ -55,7 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
       TargetPlatform.macOS   => const Text('Continue in macOS view'),
       TargetPlatform.linux   => const Text('Continue in Linux view'),
       TargetPlatform.fuchsia => throw UnimplementedError('Platform not yet implemented'),
-    };
+    }
   }
 
   Future<void> _launchPlatformCount() async {

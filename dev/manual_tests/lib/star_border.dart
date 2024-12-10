@@ -481,6 +481,6 @@ ShapeBorder? lerpBorder(StarBorder border, LerpTarget target, double t, {bool to
     LerpTarget.polygon     => const StarBorder.polygon(side: lerpToBorder, sides: 4),
     LerpTarget.star        => const StarBorder(side: lerpToBorder, innerRadiusRatio: 0.5),
     LerpTarget.roundedRect => RoundedRectangleBorder(side: lerpToBorder, borderRadius: BorderRadius.circular(10)),
-  };
+  }
   return to ? border.lerpTo(targetBorder, t) : border.lerpFrom(targetBorder, t);
 }

@@ -71,13 +71,13 @@ class ResampleFlagVariant extends TestVariant<TestScenario> {
     return switch (currentValue) {
       TestScenario.resampleOn90Hz  || TestScenario.resampleOn59Hz  => true,
       TestScenario.resampleOff90Hz || TestScenario.resampleOff59Hz => false,
-    };
+    }
   }
   double get frequency {
     return switch (currentValue) {
       TestScenario.resampleOn90Hz || TestScenario.resampleOff90Hz => 90.0,
       TestScenario.resampleOn59Hz || TestScenario.resampleOff59Hz => 59.0,
-    };
+    }
   }
 
   Map<String, dynamic>? result;
@@ -89,7 +89,7 @@ class ResampleFlagVariant extends TestVariant<TestScenario> {
       TestScenario.resampleOn59Hz  => 'resample on with 59Hz input',
       TestScenario.resampleOff90Hz => 'resample off with 90Hz input',
       TestScenario.resampleOff59Hz => 'resample off with 59Hz input',
-    };
+    }
   }
 
   @override

@@ -188,7 +188,7 @@ class _ListDemoState extends State<ListDemo> {
       _MaterialListType.oneLine || _MaterialListType.oneLineWithAvatar || null => null,
       _MaterialListType.twoLine   => 'Additional item information.',
       _MaterialListType.threeLine => 'Even more additional list item information appears on line three.',
-    };
+    }
     return MergeSemantics(
       child: ListTile(
         isThreeLine: _itemType == _MaterialListType.threeLine,
@@ -209,7 +209,7 @@ class _ListDemoState extends State<ListDemo> {
       _MaterialListType.twoLine => 'Two-line',
       _MaterialListType.threeLine => 'Three-line',
       null => null,
-    };
+    }
 
     Iterable<Widget> listTiles = items.map<Widget>((String item) => buildListTile(context, item));
     if (_showDividers != null) {

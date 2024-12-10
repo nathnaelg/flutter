@@ -136,7 +136,7 @@ class CustomerTest {
     return switch (platform) {
       _PlatformType.all => '${directive.name}=',
       _ => '${directive.name}.${platform.name}=',
-    };
+    }
   }
 }
 

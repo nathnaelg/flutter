@@ -158,7 +158,7 @@ class PathCommandAnimation {
       'L' => '_PathLineTo',
       'Z' => '_PathClose',
       _ => throw Exception('unsupported path command: $type'),
-    };
+    }
     final StringBuffer sb = StringBuffer();
     sb.write('${kIndent * 4}const $dartCommandClass(\n');
     for (final List<Point<double>> pointFrames in points) {

@@ -120,7 +120,7 @@ class _StopwatchVisitor extends RecursiveAstVisitor<void> {
     final bool isAllowed = switch (element.returnType) {
       InterfaceType(element: final ClassElement classElement) => !_implementsStopwatch(classElement),
       InterfaceType(element: InterfaceElement()) => true,
-    };
+    }
     if (isAllowed || _hasTrailingFlutterIgnore(node)) {
       return;
     }
@@ -135,7 +135,7 @@ class _StopwatchVisitor extends RecursiveAstVisitor<void> {
         library: final LibraryElement libraryElement
       ) => _isInternal(libraryElement) || !_implementsStopwatch(classElement),
       Element() || null => true,
-    };
+    }
     if (isAllowed || _hasTrailingFlutterIgnore(node)) {
       return;
     }

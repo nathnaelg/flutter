@@ -111,7 +111,7 @@ class _CupertinoAlertDemoState extends State<CupertinoAlertDemo>
       AlertDemoType.alertButtons     => localizations.demoCupertinoAlertButtonsTitle,
       AlertDemoType.alertButtonsOnly => localizations.demoCupertinoAlertButtonsOnlyTitle,
       AlertDemoType.actionSheet      => localizations.demoCupertinoActionSheetTitle,
-    };
+    }
   }
 
   static Route<String> _alertDemoDialog(

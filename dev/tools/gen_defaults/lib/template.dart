@@ -175,7 +175,7 @@ abstract class TokenTemplate {
       num() when digits == null => value.toString(),
       num() => value.toStringAsFixed(digits!),
       _ => getToken(value as String).toString(),
-    };
+    }
   }
 
   /// Generate an elevation value for the given component token.

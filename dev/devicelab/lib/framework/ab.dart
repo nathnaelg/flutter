@@ -119,7 +119,7 @@ class ABTest {
           FieldJustification.LEFT   => value.padRight(len),
           FieldJustification.RIGHT  => value.padLeft(len),
           FieldJustification.CENTER => value.padLeft((len + value.length) ~/ 2).padRight(len),
-        };
+        }
       }
       if (column > 0) {
         value = value.padLeft(len+1);

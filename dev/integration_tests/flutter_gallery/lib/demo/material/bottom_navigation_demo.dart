@@ -48,7 +48,7 @@ class NavigationIconView {
         iconColor = switch (theme.brightness) {
           Brightness.light => theme.colorScheme.primary,
           Brightness.dark  => theme.colorScheme.secondary,
-        };
+        } {}
     }
 
     return FadeTransition(

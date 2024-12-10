@@ -2,21 +2,8 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-import 'diagnostics_tree.dart';
-import 'error.dart';
 import 'find.dart';
-import 'frame_sync.dart';
-import 'geometry.dart';
-import 'gesture.dart';
-import 'health.dart';
-import 'layer_tree.dart';
 import 'message.dart';
-import 'render_tree.dart';
-import 'request_data.dart';
-import 'semantics.dart';
-import 'text.dart';
-import 'text_input_action.dart';
-import 'wait.dart';
 
 /// A factory for deserializing [Finder]s.
 mixin DeserializeFinderFactory {
@@ -32,7 +19,7 @@ mixin DeserializeFinderFactory {
       'Descendant'       => Descendant.deserialize(json, this),
       'Ancestor'         => Ancestor.deserialize(json, this),
       _ => throw DriverError('Unsupported search specification type ${json['finderType']}'),
-    };
+    }
   }
 }
 
@@ -65,6 +52,6 @@ mixin DeserializeCommandFactory {
       'get_offset'                    => GetOffset.deserialize(params, finderFactory),
       'get_diagnostics_tree'          => GetDiagnosticsTree.deserialize(params, finderFactory),
       final String? kind => throw DriverError('Unsupported command kind $kind'),
-    };
+    }
   }
 }

@@ -417,7 +417,7 @@ class _PlatformItem extends StatelessWidget {
       TargetPlatform.linux   => 'Material Desktop (linux)',
       TargetPlatform.macOS   => 'Material Desktop (macOS)',
       TargetPlatform.windows => 'Material Desktop (Windows)',
-    };
+    }
   }
 
   @override

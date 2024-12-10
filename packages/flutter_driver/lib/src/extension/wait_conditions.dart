@@ -184,5 +184,5 @@ WaitCondition deserializeCondition(SerializableWaitCondition waitCondition) {
     'NoPendingPlatformMessagesCondition' => _InternalNoPendingPlatformMessagesCondition.deserialize(waitCondition),
     'CombinedCondition'                  => _InternalCombinedCondition.deserialize(waitCondition),
     _ => throw SerializationException('Unsupported wait condition $conditionName in ${waitCondition.serialize()}'),
-  };
+  }
 }

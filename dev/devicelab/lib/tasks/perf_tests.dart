@@ -813,7 +813,7 @@ void _disablePartialRepaint(String testDirectory) {
   final String xmlStr = file.readAsStringSync();
   final XmlDocument xmlDoc = XmlDocument.parse(xmlStr);
   final List<(String, String)> keyPairs = <(String, String)>[
-    ('FLTDisablePartialRepaint', 'true'),
+    'FLTDisablePartialRepaint', 'true',
   ];
 
   final XmlElement applicationNode =
@@ -886,7 +886,7 @@ void _addMetadataToManifest(String testDirectory, List<(String, String)> keyPair
 ///   android:value="true" />
 void _addVulkanGPUTracingToManifest(String testDirectory) {
   final List<(String, String)> keyPairs = <(String, String)>[
-    ('io.flutter.embedding.android.EnableVulkanGPUTracing', 'true'),
+    'io.flutter.embedding.android.EnableVulkanGPUTracing', 'true',
   ];
   _addMetadataToManifest(testDirectory, keyPairs);
 }
@@ -901,8 +901,8 @@ void _addVulkanGPUTracingToManifest(String testDirectory) {
 ///   android:value="true" />
 void _addOpenGLESToManifest(String testDirectory) {
   final List<(String, String)> keyPairs = <(String, String)>[
-    ('io.flutter.embedding.android.ImpellerBackend', 'opengles'),
-    ('io.flutter.embedding.android.EnableOpenGLGPUTracing', 'true'),
+    'io.flutter.embedding.android.ImpellerBackend', 'opengles',
+    'io.flutter.embedding.android.EnableOpenGLGPUTracing', 'true',
   ];
   _addMetadataToManifest(testDirectory, keyPairs);
 }
@@ -2197,7 +2197,7 @@ String _reportedDurationTestToString(ReportedDurationTestFlavor flavor) {
     ReportedDurationTestFlavor.debug   => 'debug',
     ReportedDurationTestFlavor.profile => 'profile',
     ReportedDurationTestFlavor.release => 'release',
-  };
+  }
 }
 
 class ReportedDurationTest {

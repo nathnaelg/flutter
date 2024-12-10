@@ -229,7 +229,7 @@ abstract class GlobalMaterialLocalizations implements MaterialLocalizations {
     return switch (timeOfDay.period) {
       DayPeriod.am => anteMeridiemAbbreviation,
       DayPeriod.pm => postMeridiemAbbreviation,
-    };
+    }
   }
 
   /// The raw version of [dateRangeStartDateSemanticLabel], with `$formattedDate` verbatim

@@ -204,5 +204,5 @@ SerializableWaitCondition _deserialize(Map<String, String> json) {
     final String condition => throw SerializationException(
       'Unsupported wait condition $condition in the JSON string $json',
     ),
-  };
+  }
 }

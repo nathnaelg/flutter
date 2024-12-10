@@ -40,7 +40,7 @@ class _MyWidgetState extends State<MyWidget> {
       AxisDirection.down  => const Icon(Icons.arrow_downward_rounded),
       AxisDirection.left  => const Icon(Icons.arrow_back_rounded),
       AxisDirection.right => const Icon(Icons.arrow_forward_rounded),
-    };
+    }
     return Flex(
       direction: flipAxis(axisDirectionToAxis(_axisDirection)),
       mainAxisAlignment: MainAxisAlignment.center,

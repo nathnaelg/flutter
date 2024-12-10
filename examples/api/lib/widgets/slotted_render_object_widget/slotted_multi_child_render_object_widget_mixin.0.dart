@@ -36,7 +36,7 @@ class Diagonal extends SlottedMultiChildRenderObjectWidget<DiagonalSlot, RenderB
     return switch (slot) {
       DiagonalSlot.topLeft     => topLeft,
       DiagonalSlot.bottomRight => bottomRight,
-    };
+    }
   }
 
   // The [createRenderObject] and [updateRenderObject] methods configure the

@@ -389,7 +389,7 @@ bool testIsSuperset(Map<String, String> newCodepoints, Map<String, String> oldCo
 bool testIsStable(Map<String, String> newCodepoints, Map<String, String> oldCodepoints) {
   final int oldCodepointsCount = oldCodepoints.length;
   final List<String> unstable = <String>[
-    for (final MapEntry<String, String>(:String key, :String value) in oldCodepoints.entries)
+    for (final MapEntry<String, String>( =String key, :String value) in oldCodepoints.entries)
       if (newCodepoints.containsKey(key) && value != newCodepoints[key]) key,
   ];
 

@@ -345,6 +345,6 @@ class _HighlightSpan {
       _HighlightType.punctuation => style!.punctuationStyle,
       _HighlightType.klass       => style!.classStyle,
       _HighlightType.constant    => style!.constantStyle,
-    };
+    }
   }
 }
